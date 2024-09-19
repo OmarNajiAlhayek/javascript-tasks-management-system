@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+body {
+  direction: rtl;
+  background: rgb(30, 0, 77);
+  font-family: "Tajawal", sans-serif;
+}
+
+.center-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-header {
+  width: 100%;
+  text-align: center;
+  background: rgb(92, 52, 155);
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.task-table {
+  background: rgb(239, 239, 239);
+  width: 60%;
+  min-height: 400px;
+  height: fit-content;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+#header {
+  display: inline;
+}
+
+button {
+  border: none;
+  font-size: 20px;
+}
+
+button.circular-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 0;
+  cursor: pointer;
+}
+
+#add-task-btn {
+  float: right;
+  background: wight;
+  margin-right: 10px;
+}
+
+#clear-all-tasks-btn {
+  float: left;
+  background: rgba(143, 23, 23, 1);
+  color:white;
+  margin-left: 10px;
+}
+
+.task-info {
+  width: 70%;
+}
+
+.delete-btn {
+  background: rgb(114, 0, 0);
+}
+
+.toggle-completion-not-done-btn {
+  background: rgb(0, 150, 30);
+}
+
+.toggle-completion-done-btn {
+  background: rgb(118, 0, 101);
+}
+
+.edit-btn {
+  background: rgba(0, 16, 197, 0.692);
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  color: white;
+}
+
+.task-actions > button {
+  color: white;
+}
+
+.task {
+  display: flex;
+  background: white;
+  padding: 4px;
+  border-bottom: solid black 1px;
+  transition: box-shadow 0.2s;
+}
+
+.task:hover {
+  box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+.tasks {
+  padding: 20px;
+}
+
+.tasks > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.task-done {
+  background: rgb(158, 253, 160);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.clear-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  color: #ccc;
+
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.search-container svg {
+  position: absolute;
+  right: 10px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  padding-right: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  width: 300px; /* Adjust width as needed */
+  margin-left: 10px; /* Space between icon and input */
+
+  
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>برنامج إدارة المهام</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+
+
+
+    <div>
+      <!-- CENTER DIV -->
+      <div class="center-div">
+
+
+        <div class="search-container">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+          <input id="search" type="text" placeholder="بحث...">
+          <span id="clear-icon" class="clear-icon" onclick="clearSearch()">✕</span>
+        </div>
+        
+
+
+
+
+        <!-- TASKS TABLE -->
+        <div class="task-table">
+          <!-- HEADER -->
+          <div class="task-header">
+            <h1 id="header">مهامي</h1>
+
+            <button id="add-task-btn" onclick="addTask()" class="circular-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+              </svg>
+            </button>
+
+            <button title="احذف كل المهام." id="clear-all-tasks-btn" onclick="clearAllTasks()" class="circular-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m376-300 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 180q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520Zm-400 0v520-520Z"/></svg>
+            </button>
+
+          </div>
+          <!-- HEADER -->
+
+          <!-- TASKS -->
+          <div class="tasks" id="tasks">
+            <!-- TASK -->
+            <!-- TASK HERE -->
+            <!-- END TASK -->
+          </div>
+          <!-- END TASKS -->
+        </div>
+        <!-- END TASKS TABLE -->
+      </div>
+      <!-- END CENTER DIV -->
+    </div>
+
+    
+  </body>
+</html>
